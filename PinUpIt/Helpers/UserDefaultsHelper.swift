@@ -53,8 +53,8 @@ class UserDefaultsHelper {
   }
   
   init() {
-    UserDefaults.standard.register(defaults: [UserDefaultsKeys.isMuted.rawValue : false])
-    UserDefaults.standard.register(defaults: [UserDefaultsKeys.isMutedSound.rawValue : false])
+    UserDefaults.standard.register(defaults: [UserDefaultsKeys.isMuted.rawValue : true])
+    UserDefaults.standard.register(defaults: [UserDefaultsKeys.isMutedSound.rawValue : true])
     //UserDefaults.standard.register(defaults: [UserDefaultsKeys.level.rawValue : 0])
     var array = [Int]()
     for _ in 0..<Level.Levels.allCases.count {
